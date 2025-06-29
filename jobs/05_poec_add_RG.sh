@@ -16,8 +16,8 @@ cd /hb/home/snbogan/RepAdapt/poecilid_vcfs/05_rg/poec/
 
 ### Keep the lists below with the same order
 INPUT=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 05_list1.txt) ### List of input deduplicated bam files
-OUTPUT=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 05_list2.txt) ### List of output names (just remove .bam) from the inputs
-NAME=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 05_list2.txt)   ### Here you want to extract the sample name from the input name, which is used to set the read IDs. Can be the same as list2.txt
+OUTPUT=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 05_list2_cleaned.txt) ### List of output names (just remove .bam) from the inputs
+NAME=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 05_list2_cleaned.txt)   ### Here you want to extract the sample name from the input name, which is used to set the read IDs. Can be the same as list2.txt
 
 
 ### Here we add read groups, we start with our deduplicated bam files and we get a deduplicated bam with read groups assigned per sample/library
