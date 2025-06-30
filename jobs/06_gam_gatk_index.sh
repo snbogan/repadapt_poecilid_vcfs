@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --account=pi-jkoc
+#SBATCH --partition=lab-colibri
+#SBATCH --qos=pi-jkoc
+#SBATCH --job-name=gam_gatk_index
+#SBATCH --time=1-00:00:00
+#SBATCH --mem-per-cpu=5G
+#SBATCH --mail-user=snbogan@ucsc.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output=gam_gatk_index.out
+#SBATCH --error=gam_gatk_index.err
+
+### This is to create gatk index of ref genome needed for indel realignment
+### Keep the output files of this command in the same dir where you keep the reference genome fasta
+
+# Move to wd
+cd /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/
+
+# Load modules
+module load java/8u151
+module load picard/2.27.1
+module load samtools
+
+# Index genome
+samtools faidx rawg0043_Gambusia_sexradiata_kelley.fasta
+
+# Create dictionary
+picard CreateSequenceDictionary R=rawg0043_Gambusia_sexradiata_kelley.fasta O=rawg0043_Gambusia_sexradiata_kelley.dict
+
