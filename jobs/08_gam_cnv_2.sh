@@ -29,17 +29,17 @@ samtools depth -aa $INPUT > $OUTPUT\.depth
 
 # gene depth analysis
 echo \n">>> Computing depth of each gene for $file <<<"\n
-awk '{print $1"\t"$2"\t"$2"\t"$3}' $OUTPUT\.depth | bedtools map -a genes.bed -b stdin -c 4 -o mean -null 0 -g genome.bed | awk -F "\t" '{print $1":"$2"-"$3"\t"$4}' | sort -k1,1 > $OUTPUT\-genes.tsv
+awk '{print $1"\t"$2"\t"$2"\t"$3}' $OUTPUT\.depth | bedtools map -a /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/genes.bed -b stdin -c 4 -o mean -null 0 -g /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/genome.bed | awk -F "\t" '{print $1":"$2"-"$3"\t"$4}' | sort -k1,1 > $OUTPUT\-genes.tsv
 
 # sort gene depth results based on input bed file
-join -a 1 -e 0 -o '1.1 2.2' -t $'\t' genes.list $OUTPUT\-genes.tsv > $OUTPUT\-genes.sorted.tsv
+join -a 1 -e 0 -o '1.1 2.2' -t $'\t' /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/genes.list $OUTPUT\-genes.tsv > $OUTPUT\-genes.sorted.tsv
 
 # window depth analysis
 echo \n">>> Computing depth of each window for $file <<<"\n
-awk '{print $1"\t"$2"\t"$2"\t"$3}' $OUTPUT\.depth | bedtools map -a windows.bed -b stdin -c 4 -o mean -null 0 -g genome.bed | awk -F "\t" '{print $1":"$2"-"$3"\t"$4}' | sort -k1,1  > $OUTPUT\-windows.tsv
+awk '{print $1"\t"$2"\t"$2"\t"$3}' $OUTPUT\.depth | bedtools map -a /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/windows.bed -b stdin -c 4 -o mean -null 0 -g /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/genome.bed | awk -F "\t" '{print $1":"$2"-"$3"\t"$4}' | sort -k1,1  > $OUTPUT\-windows.tsv
 
 # sort window depth results based on input bed file
-join -a 1 -e 0 -o '1.1 2.2' -t $'\t' windows.list $OUTPUT\-windows.tsv > $OUTPUT\-windows.sorted.tsv
+join -a 1 -e 0 -o '1.1 2.2' -t $'\t' /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/windows.list $OUTPUT\-windows.tsv > $OUTPUT\-windows.sorted.tsv
 
 # overall genome depth
 echo \n">>> Computing depth of whole genome for $file <<<"\n
