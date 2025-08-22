@@ -35,8 +35,8 @@ module load miniconda3
 conda activate gatk_v3.8
 
 GenomeAnalysisTK -T RealignerTargetCreator \
- -R hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/poec/rawg0041_Poecilia_mexicana_kelley.fasta \ -I $INPUT -o $OUTPUT\.intervals
+ -R /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/poec/rawg0041_Poecilia_mexicana_kelley.fasta \ -I $INPUT -o $OUTPUT\.intervals
 
 GenomeAnalysisTK -T IndelRealigner -R \
- hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/poec/rawg0041_Poecilia_mexicana_kelley.fasta \
+ /hb/home/snbogan/RepAdapt/poecilid_vcfs/02_bwa_index/poec/rawg0041_Poecilia_mexicana_kelley.fasta \
   -I $INPUT -targetIntervals $OUTPUT\.intervals --consensusDeterminationModel USE_READS  -o $OUTPUT\_realigned.bam
