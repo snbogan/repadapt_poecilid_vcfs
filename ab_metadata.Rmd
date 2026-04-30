@@ -1,0 +1,79 @@
+---
+title: "ab_metadata"
+author: "Sam Bogan"
+date: "2026-04-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Load libraries
+library(stringr)
+library(dplyr)
+library(purrr)
+library(tidyr)
+
+```
+
+Wrangle NCBI metadata into tabular df and csv
+
+```{r}
+
+# Read the raw text (replace with your file path if needed)
+txt <- readLines(
+  "~/Documents/GitHub/repadapt_poecilid_vcfs/metadata/abalone/biosample_result.txt"
+  )
+
+# Collapse into one string
+txt <- paste(txt, collapse = "\n")
+
+# Split entries by leading number
+entries <- str_split(txt, "\n\\d+:\\s+")[[1]]
+
+# Remove empty first element if present
+entries <- entries[entries != ""]
+
+# Function to parse one entry
+parse_entry <- function(x) {
+  tibble(
+    sample_id = str_extract(x, "^[^\\n]+"),
+    biosample = str_match(x, "BioSample:\\s*(\\S+)")[,2],
+    sample_name = str_match(x, "Sample name:\\s*(\\S+)")[,2],
+    sra = str_match(x, "SRA:\\s*(\\S+)")[,2],
+    organism = str_match(x, "Organism:\\s*([^\\n]+)")[,2],
+    collection_date = str_match(x, 'collection date="([^"]+)"')[,2],
+    geographic_location = str_match(x, 'geographic location="([^"]+)"')[,2],
+    tissue = str_match(x, 'tissue="([^"]+)"')[,2],
+    collected_by = str_match(x, 'collected by="([^"]+)"')[,2],
+    isolate = str_match(x, 'isolate="([^"]+)"')[,2],
+    isolation_source = str_match(x, 'isolation source="([^"]+)"')[,2],
+    lat_long = str_match(x, 'latitude and longitude="([^"]+)"')[,2],
+    accession = str_match(x, "Accession:\\s*(\\S+)")[,2],
+    id = str_match(x, "ID:\\s*(\\S+)")[,2]
+  )
+}
+
+# Apply parser to all entries
+df <- map_dfr(entries, parse_entry)
+
+# Optional: split latitude/longitude into numeric columns
+df <- df %>%
+  separate(lat_long, into = c("lat", "lon"), sep = " N | W", remove = FALSE) %>%
+  mutate(
+    lat = as.numeric(lat),
+    lon = -as.numeric(lon)  # western hemisphere negative
+  )
+
+# Remove semicolons
+df$biosample <- gsub(";", "", df$biosample)
+df$sample_name <- gsub(";", "", df$sample_name)
+
+# Write to CSV
+write.csv(df, "biosample_metadata_tabular.csv", row.names = FALSE)
+
+# Preview
+print(df)
+
+```
+
