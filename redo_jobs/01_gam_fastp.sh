@@ -29,5 +29,5 @@ conda activate fastp_v0.20.1
 fastp -w 4 \
   -i $INPUT1 \
   -I $INPUT2 \
-  -o ${OUTPUT1}_trimmed.fastq.gz \
-  -O ${OUTPUT2}_trimmed.fastq.gz
+  -o ${OUTPUT1}_R1_trimmed.fastq.gz \
+  -O ${OUTPUT2}_R2_trimmed.fastq.gz
