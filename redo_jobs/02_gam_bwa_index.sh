@@ -17,6 +17,6 @@
 module load miniconda3
 conda activate bwa_v0.7.17
 
-cd /data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/
+cd /data/colibri/kelley_lab/bogan/RepAdapt/02_bwa_index/gam/
 
-bwa index -a bwtsw /data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/rawg0043_Gambusia_sexradiata_kelley.fasta
+bwa index -a bwtsw /data/colibri/kelley_lab/bogan/RepAdapt/02_bwa_index/gam/rawg0043_Gambusia_sexradiata_kelley.fasta

@@ -17,6 +17,6 @@
 module load miniconda3
 conda activate bwa_v0.7.17
 
-cd /data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/02_bwa_index/poec/
+cd /data/colibri/kelley_lab/bogan/RepAdapt/02_bwa_index/poec/
 
-bwa index -a bwtsw /data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/02_bwa_index/poec/rawg0041_Poecilia_mexicana_kelley.fasta
+bwa index -a bwtsw /data/colibri/kelley_lab/bogan/RepAdapt/02_bwa_index/poec/rawg0041_Poecilia_mexicana_kelley.fasta
