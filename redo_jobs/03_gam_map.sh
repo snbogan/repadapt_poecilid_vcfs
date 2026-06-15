@@ -13,22 +13,22 @@
 #SBATCH --error=gam_bwa_map_err/err_%A_%a.err
 
 # Move to working directory
-cd /data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/03_bwa_map/gam/
+cd /data/colibri/kelley_lab/bogan/RepAdapt/03_bwa_map/gam/
 
 # Load packages (samtools v1.16.1 is installed in bwa)
 module load miniconda3
 conda activate bwa_v0.7.17
 
 # Input and output lists
-INPUT1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list1.txt)  # Combined R1 fastq.gz
-INPUT2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list2.txt)  # Combined R2 fastq.gz
-OUTPUT=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list3.txt)  # Output file prefix (no extensions)
+INPUT1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list1_redo.txt)  # Combined R1 fastq.gz
+INPUT2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list2_redo.txt)  # Combined R2 fastq.gz
+OUTPUT=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list3_redo.txt)  # Output file prefix (no extensions)
 
 # Reference genome
-REFGENOME=/data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/02_bwa_index/gam/rawg0043_Gambusia_sexradiata_kelley.fasta
+REFGENOME=/data/colibri/kelley_lab/bogan/RepAdapt/02_bwa_index/gam/rawg0043_Gambusia_sexradiata_kelley.fasta
 
 # Output directory
-OUTDIR=/data/colibri/kelley_lab/bogan/RepAdapt/poecilid_vcfs/03_bwa_map/gam/bwa_output
+OUTDIR=/data/colibri/kelley_lab/bogan/RepAdapt/03_bwa_map/gam/bwa_output
 
 # Alignment and processing
 bwa mem -t 4 $REFGENOME $INPUT1 $INPUT2 > ${OUTDIR}/${OUTPUT}.sam

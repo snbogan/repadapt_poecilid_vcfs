@@ -25,7 +25,7 @@ INPUT2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list2.txt)  # Combined R2 fastq.gz
 OUTPUT=$(sed -n "${SLURM_ARRAY_TASK_ID}p" 03_list3.txt)  # Output file prefix (no extensions)
 
 # Reference genome
-REFGENOME=/hb/home/snbogan/repadapt/vcf/invert/genomes/abalone/GCA_023055435.1_xgHalRufe1.0.p_genomic.fna
+REFGENOME=/hb/home/snbogan/repadapt/vcf/invert/genomes/abalone/rawg0133_Haliotis_rufescens_Bogan.fna
 
 # Output directory
 OUTDIR=/hb/home/snbogan/repadapt/vcf/invert/03_bwa_map/abalone/bwa_output

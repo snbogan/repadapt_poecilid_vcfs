@@ -2,7 +2,7 @@
 #SBATCH --account=pi-jkoc
 #SBATCH --partition=lab-colibri
 #SBATCH --qos=pi-jkoc
-#SBATCH --job-name=01_poec_fastp_pt1
+#SBATCH --job-name=01_poec_fastp_4_139
 #SBATCH --time=3-00:00:00
 #SBATCH --mail-user=snbogan@ucsc.edu
 #SBATCH --mail-type=ALL
@@ -10,7 +10,7 @@
 #SBATCH --error=01_poec_fastp_pt1_err/err_%A_%a.err
 #SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=30G
-#SBATCH --array=1-160
+#SBATCH --array=4,139
 
 # Move to working directory
 cd /data/colibri/kelley_lab/bogan/RepAdapt/01_fastp/poec/
