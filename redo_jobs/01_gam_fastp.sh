@@ -15,19 +15,46 @@
 # Move to working directory
 cd /data/colibri/kelley_lab/bogan/RepAdapt/01_fastp/gam/
 
-# THESE LISTS NEED TO FOLLOW THE SAME ORDER
-INPUT1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list5.txt)  # Raw R1 fastq
-INPUT2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list6.txt)  # Raw R2 fastq
-OUTPUT1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list7.txt) # Base name for output R1
-OUTPUT2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list8.txt) # Base name for output R2
+# Corresponding files for each sample
+R1_FC1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list1.txt)
+R2_FC1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list2.txt)
 
-# Load modules
+R1_FC2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list5.txt)
+R2_FC2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list6.txt)
+
+OUTPUT1=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list7.txt)
+OUTPUT2=$(sed -n "${SLURM_ARRAY_TASK_ID}p" list8.txt)
+
+# Temporary combined files
+COMBINED_R1=${OUTPUT1}_combined_R1.fastq.gz
+COMBINED_R2=${OUTPUT2}_combined_R2.fastq.gz
+
+# Repaired files
+REPAIRED_R1=${OUTPUT1}_repaired_R1.fastq.gz
+REPAIRED_R2=${OUTPUT2}_repaired_R2.fastq.gz
+SINGLETONS=${OUTPUT1}_singletons.fastq.gz
+
+# Combine flow cells
+cat "$R1_FC1" "$R1_FC2" > "$COMBINED_R1"
+cat "$R2_FC1" "$R2_FC2" > "$COMBINED_R2"
+
+# Repair read pairing
 module load miniconda3
+conda activate bbmap
+
+repair.sh \
+    in1="$COMBINED_R1" \
+    in2="$COMBINED_R2" \
+    out1="$REPAIRED_R1" \
+    out2="$REPAIRED_R2" \
+    outs="$SINGLETONS"
+
+# Run fastp on repaired reads
+conda deactivate
 conda activate fastp_v0.20.1
 
-# Trim with fastp using repaired reads
 fastp -w 4 \
-  -i $INPUT1 \
-  -I $INPUT2 \
-  -o ${OUTPUT1}_R1_trimmed.fastq.gz \
-  -O ${OUTPUT2}_R2_trimmed.fastq.gz
+    -i "$REPAIRED_R1" \
+    -I "$REPAIRED_R2" \
+    -o "${OUTPUT1}_R1_trimmed.fastq.gz" \
+    -O "${OUTPUT2}_R2_trimmed.fastq.gz"
