@@ -39,9 +39,9 @@ module load miniconda3
 conda activate gatk_v3.8
 
 GenomeAnalysisTK -T RealignerTargetCreator \
- -R /hb/home/snbogan/repadapt/vcf/invert/genomes/abalone/GCA_023055435.1_xgHalRufe1.0.p_genomic.fna \
+ -R /hb/home/snbogan/repadapt/vcf/invert/genomes/abalone/rawg0133_Haliotis_rufescens_Bogan.fna \
  -I $INPUT -o $OUTPUT\.intervals
 
 GenomeAnalysisTK -T IndelRealigner -R \
-  /hb/home/snbogan/repadapt/vcf/invert/genomes/abalone/GCA_023055435.1_xgHalRufe1.0.p_genomic.fna \
+  /hb/home/snbogan/repadapt/vcf/invert/genomes/abalone/rawg0133_Haliotis_rufescens_Bogan.fna \
   -I $INPUT -targetIntervals $OUTPUT\.intervals --consensusDeterminationModel USE_READS  -o $OUTPUT\_realigned.bam
