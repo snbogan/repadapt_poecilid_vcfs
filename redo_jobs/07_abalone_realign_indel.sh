@@ -31,7 +31,7 @@ conda deactivate
 module purge
 
 # Move to wd 1
-cd /hb/home/snbogan/repadapt/vcf/invert/07_realign_indel/abalone/redo/
+cd /hb/home/snbogan/repadapt/vcf/invert/07_realign_indel/abalone/
 
 ### Here we generate a indel realigned bam file for each sample/library
 module load java
