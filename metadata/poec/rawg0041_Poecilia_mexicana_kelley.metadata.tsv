@@ -1,0 +1,994 @@
+### Dataset metadata																										
+Field name:	Value:	Description of each field:	Type:	Comment:	Required?																					
+RepAdaptID	rawg0041	A unique identifier given to the dataset in the RepAdapt project. Use the link below to look up your ID.	Text	Look up your ID in the linked spreadsheet: https://docs.google.com/spreadsheets/d/1HEUQKbBVo8bhT4gF269A8Yz7Jq3OBOHwxYzcRB1fYWs/edit?gid=0#gid=0. This term is not Darwin Core.	REQUIRED																					
+keywords	H2S | freshwater | fish	Keywords associated with the dataset.	Text	Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term in not Darwin Core.																						
+bibliographicCitation		A bibliographic reference for the resource.	Text	Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.																						
+institutionCode	UCSC	The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.	Text	See: http://rs.tdwg.org/dwc/terms/institutionCode																						
+collectionRemarks	Not a collection	"Comments or notes about whether this data comes from samples that are stored in a collection, loaned from a collection, etc."	Text	This term is not Darwin Core.																						
+permitRemarks	Mexican federal agencies DG0PA.090004.041111.3088; SGPA-DGVS-04315; PRMN/DG0PA-003	Any relevant permit information or comments.	Text	This term is not Darwin Core.																						
+people	sbogan@skidmore.edu | jokelley@ucsc.edu	Emails of people associated with the dataset.	Email	Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term is not Darwin Core.																						
+																										
+### Sample metadata																										
+Section:	Identifiers			Taxon / Identification			Location									Record-level: Sample		Record-level: Measurement								
+Description of each field:	A unique identifier given to the entry in this metadata project.	A unique identifier given to the sample.	A unique identifier given to the population the sample belongs to.	"The full scientific name, this should be the name in the lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:identificationRemarks."	An identifier for the nomenclatural (not taxonomic) details of a scientific name.	Comments or notes about the dwc:Identification.	A spatial region or named place.	A list (concatenated and separated) of geographic names less specific than the information captured in the dcterms:Location term.	The standard code for the country in which the dcterms:Location occurs.	"The geographic latitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive."	"The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive."	"The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and dwc:decimalLongitude are based."	"The horizontal distance (in meters) from the given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term."	The original description of the depth below the local surface.	Comments or notes about the dcterms:Location.	The date-time or interval during which this data was recorded.	Comments or notes about the sample data.	Your definition of the described trait. Include units in this definition.	Your definition of the described trait. Include units in this definition.	Comments or notes about the measurement data. Include other relevent data here.						
+Type:	Text	Text	Integer	Text	Text	Text	Text	Text	Text	Decimal	Decimal	Text	Decimal	Text	Text	DateTime	Text	"H2S environment: ""non-sulfidic"" = non-sulfidic environment; ""sulfidic"" = sulfidic (H2S) environment"	"Sex: ""M"" = male; ""F"" = female"	Text						
+Comment:	Look up your ID in the linked spreadsheet. This term is not Darwin Core.	"Recommended best practice is to use a persistent, globally unique identifier. This term is not Darwin Core."	This information might be used for population structure correction. The population IDs may correspond to the different locations (latitude/longitude) for your samples.	"Names should be compliant to the most recent nomenclatural code. Thus, use the multiplication sign _ to identify a hybrid, not x or X, if possible."	GBIF or WORMS link.	"Such as method of identification, identification confidence, etc."		"Recommended best practice is to separate the values in a list with space vertical bar space ( | ), with terms in order from least specific to most specific."	"Recommended best practice is to use an ISO 3166-1-alpha-2 country code, or ""ZZ"" (for an unknown location or a location unassignable to a single country code), or ""XY"" (for the high seas beyond national jurisdication)."			"Most devices collect WGS84, but please indicate if you use a different system. If unknown, use the value ""unknown"". "				Recommended best practice is to use a date that conforms to ISO 8601-1:2019.	This term is not Darwin Core.	Recommended to include a link or figure citation from a peer reviewed scientific paper to define the trait. This term is not Darwin Core.	Recommended to include a link or figure citation from a peer reviewed scientific paper to define the trait. This term is not Darwin Core.							
+Controlled vocabulary:	https://docs.google.com/spreadsheets/d/1HEUQKbBVo8bhT4gF269A8Yz7Jq3OBOHwxYzcRB1fYWs/edit?gid=0#gid=0				https://www.gbif.org/species/search?q=  https://www.marinespecies.org/aphia.php?p=search  				https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#US			"""WGS84"": A global datum widely used for                  GPS and other navigation systems. ""NAD83"": A datum used in North America. ""NAVD88"": A vertical datum used in North                   America for measuring heights."				https://en.wikipedia.org/wiki/ISO_8601										
+Relevent link(s):				http://rs.tdwg.org/dwc/terms/scientificName	http://rs.tdwg.org/dwc/terms/scientificNameID	http://rs.tdwg.org/dwc/terms/identificationRemarks	http://purl.org/dc/terms/Location	http://rs.tdwg.org/dwc/terms/locality	http://rs.tdwg.org/dwc/terms/countryCode	http://rs.tdwg.org/dwc/terms/decimalLatitude 	http://rs.tdwg.org/dwc/terms/decimalLongitude	http://rs.tdwg.org/dwc/terms/geodeticDatum	http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters	http://rs.tdwg.org/dwc/terms/verbatimDepth	http://rs.tdwg.org/dwc/terms/locationRemarks 	http://rs.tdwg.org/dwc/terms/eventDate 										
+Required?	REQUIRED	REQUIRED	REQUIRED	REQUIRED	REQUIRED		REQUIRED	REQUIRED	REQUIRED	REQUIRED	REQUIRED	REQUIRED				REQUIRED										
+Field name:	RepAdaptID	sampleID	populationID	scientificName	scientificNameID	identificationRemarks	Location	locality	countryCode	decimalLatitude	decimalLongitude	geodeticDatum	coordinateUncertaintyInMeters	verbatimDepth	locationRemarks	eventDate	generalRemarks	YOUR_trait1_units	YOUR_trait2_units	measurementRemarks						
+	rawg0041	MX13-004_S91_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-005_S92_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-006_S93_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-007_S94_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-015_S95_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-016_S96_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-017_S97_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-018_S98_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-019_S99_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-020_S100_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-021_S101_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-024_S102_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-026_S103_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-029_S104_L004	pop01	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.48511	-93.10358	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-031_S57_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-033_S58_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-035_S59_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-038_S60_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-042_S61_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-043_S62_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-044_S63_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-045_S64_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-046_S65_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-047_S66_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-048_S67_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-052_S68_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-053_S69_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-054_S70_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-055_S71_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-058_S72_L004	pop02	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.556	-93.008	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-061_S121_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-064_S122_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-065_S123_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-066_S124_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-068_S125_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-072_S126_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-074_S127_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-076_S128_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-077_S129_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-079_S130_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-081_S131_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-083_S132_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-086_S133_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-087_S134_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-088_S135_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-090_S136_L004	pop03	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.495	-92.998	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-093_S73_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-096_S74_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-097_S75_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-101_S76_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-102_S77_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-104_S78_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-105_S79_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-108_S80_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-110_S81_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-113_S82_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-115_S83_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-116_S84_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-117_S85_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-118_S86_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-119_S87_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-120_S88_L004	pop04	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.53201	-93.01513	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-124_S41_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-125_S42_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-128_S43_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-131_S44_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-132_S45_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-135_S46_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-137_S47_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-138_S48_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-139_S49_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-140_S50_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-142_S51_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-144_S52_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-146_S53_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-148_S54_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-149_S55_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-150_S56_L004	pop05	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Pichucalco	Chiapas	MX	17.55225	-92.99859	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-152_S137_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-153_S138_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-155_S139_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-157_S140_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-158_S141_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-159_S142_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-160_S143_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-162_S144_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-163_S145_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-164_S146_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-165_S147_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-170_S148_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-172_S149_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-174_S150_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-176_S151_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-178_S152_L004	pop06	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.463	-92.895	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-182_S153_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-184_S154_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-185_S155_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-186_S156_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-187_S157_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-189_S158_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-191_S159_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-192_S160_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-193_S161_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-199_S162_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-200_S163_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-201_S164_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-202_S165_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-203_S166_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-205_S167_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-208_S168_L004	pop07	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Puyacatengo	Tabasco	MX	17.51	-92.914	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-212_S185_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-213_S186_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-218_S187_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-219_S188_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-220_S189_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-223_S190_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-224_S191_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-226_S192_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	M	male from non-H2S spring						
+	rawg0041	MX13-228_S193_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-229_S194_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-232_S195_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-233_S196_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-235_S197_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-237_S198_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-238_S199_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-239_S200_L004	pop08	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.426	-92.752	unknown				2013-01-01	Only year provided	non-sulfidic	F	female from non-H2S spring						
+	rawg0041	MX13-241_S105_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-243_S106_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-245_S107_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-247_S108_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-248_S109_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-249_S110_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-251_S111_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-255_S112_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-256_S113_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-262_S114_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-264_S115_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-265_S116_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-266_S117_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-267_S118_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-268_S119_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-270_S120_L004	pop09	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Ixtapangajoya	Chiapas	MX	17.511	-92.98	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-272_S169_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-273_S170_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-274_S171_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-276_S172_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-279_S173_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	M	male from toxic H2S spring						
+	rawg0041	MX13-280_S174_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-281_S175_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-282_S176_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-284_S177_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-287_S178_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-289_S179_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-291_S180_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-292_S181_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-296_S182_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-298_S183_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+	rawg0041	MX13-300_S184_L004	pop10	Poecilia mexicana	GBIFtaxonID:8400492	Michi Tobler	Tacotalpa	Tabasco	MX	17.442	-92.774	unknown				2013-01-01	Only year provided	sulfidic	F	female from toxic H2S spring						
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										

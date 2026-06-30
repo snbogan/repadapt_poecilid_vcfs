@@ -1,7 +1,5 @@
 #!/bin/bash
-#SBATCH --account=pi-jkoc
-#SBATCH --partition=lab-colibri
-#SBATCH --qos=pi-jkoc
+#SBATCH --partition=windfall
 #SBATCH --job-name=8_poec_cnv_2
 #SBATCH --time=24:00:00
 #SBATCH --mem-per-cpu=12G

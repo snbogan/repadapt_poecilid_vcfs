@@ -1,41 +1,41 @@
-﻿sample_name,species,ecotype,stage,region,sex,tissue,lat,lon,phylum,class,order,family,genus,georef,country,state
-EFR22_278,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_283,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_281,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_288,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_287,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_290,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_286,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_289,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_285,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_284,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_339,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_338,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_352,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_355,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_356,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_336,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_357,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_353,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_340,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_342,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_319,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_334,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_322,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_333,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_328,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_330,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_323,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_329,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_332,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_331,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_294,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_307,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_297,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_296,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_292,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_295,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_291,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_293,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_298,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
-EFR22_299,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+﻿sample_name,species,ecotype,stage,region,sex,tissue,date,lat,lon,phylum,class,order,family,genus,georef,country,state
+EFR22_278,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_283,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_281,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_288,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_287,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_290,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_286,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_289,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_285,G. eurystoma,sulfidic,adult,Banos el Azufre,F,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_284,G. eurystoma,sulfidic,adult,Banos el Azufre,M,skeletal  muscle,5/15/23,17.552 N,92.998 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_339,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_338,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_352,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_355,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_356,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_336,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_357,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_353,G. sexradiata,non-sulfidic,adult,Gravel Pit,M,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_340,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_342,G. sexradiata,non-sulfidic,adult,Gravel Pit,F,skeletal  muscle,5/23/23,17.589651 N,92.980309 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_319,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_334,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_322,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_333,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_328,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_330,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_323,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_329,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,M,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_332,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_331,G. sexradiata,sulfidic,adult,Mogote de Puyacatengo,F,skeletal  muscle,5/20/23,17.582 N,92.899 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_294,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_307,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_297,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_296,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_292,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_295,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_291,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_293,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_298,G. sexradiata,non-sulfidic,adult,Caparosso,F,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco
+EFR22_299,G. sexradiata,non-sulfidic,adult,Caparosso,M,skeletal  muscle,5/16/23,18.341 N,92.792 W,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,GPS,Mexico,Tabasco

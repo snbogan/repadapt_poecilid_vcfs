@@ -1,0 +1,996 @@
+### Dataset metadata																										
+Field name:	Value:	Description of each field:	Type:	Comment:	Required?																					
+RepAdaptID	rawg0133	A unique identifier given to the dataset in the RepAdapt project. Use the link below to look up your ID.	Text	Look up your ID in the linked spreadsheet: https://docs.google.com/spreadsheets/d/1HEUQKbBVo8bhT4gF269A8Yz7Jq3OBOHwxYzcRB1fYWs/edit?gid=0#gid=0. This term is not Darwin Core.	REQUIRED																					
+keywords	abalone | temperature | pH | california	Keywords associated with the dataset.	Text	Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term in not Darwin Core.																						
+bibliographicCitation	doi.org/10.1111/mec.17650	A bibliographic reference for the resource.	Text	Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.																						
+institutionCode	UCSC	The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.	Text	See: http://rs.tdwg.org/dwc/terms/institutionCode																						
+collectionRemarks	Not a collection	"Comments or notes about whether this data comes from samples that are stored in a collection, loaned from a collection, etc."	Text	This term is not Darwin Core.																						
+permitRemarks	NA	Any relevant permit information or comments.	Text	This term is not Darwin Core.																						
+people	sbogan@skidmore.edu	Emails of people associated with the dataset.	Email	Recommended best practice is to separate the values in a list with space vertical bar space ( | ). This term is not Darwin Core.																						
+																										
+### Sample metadata																										
+Section:	Identifiers			Taxon / Identification			Location									Record-level: Sample		Record-level: Measurement								
+Description of each field:	A unique identifier given to the entry in this metadata project.	A unique identifier given to the sample.	A unique identifier given to the population the sample belongs to.	"The full scientific name, this should be the name in the lowest level taxonomic rank that can be determined. This term should not contain identification qualifications, which should instead be supplied in the dwc:identificationRemarks."	An identifier for the nomenclatural (not taxonomic) details of a scientific name.	Comments or notes about the dwc:Identification.	A spatial region or named place.	A list (concatenated and separated) of geographic names less specific than the information captured in the dcterms:Location term.	The standard code for the country in which the dcterms:Location occurs.	"The geographic latitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive."	"The geographic longitude (in decimal degrees, using the spatial reference system given in dwc:geodeticDatum) of the geographic center of a dcterms:Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive."	"The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in dwc:decimalLatitude and dwc:decimalLongitude are based."	"The horizontal distance (in meters) from the given dwc:decimalLatitude and dwc:decimalLongitude describing the smallest circle containing the whole of the dcterms:Location. Leave the value empty if the uncertainty is unknown, cannot be estimated, or is not applicable (because there are no coordinates). Zero is not a valid value for this term."	The original description of the depth below the local surface.	Comments or notes about the dcterms:Location.	The date-time or interval during which this data was recorded.	Comments or notes about the sample data.	Your definition of the described trait. Include units in this definition.	Your definition of the described trait. Include units in this definition.	Comments or notes about the measurement data. Include other relevent data here.						
+Type:	Text	Text	Integer	Text	Text	Text	Text	Text	Text	Decimal	Decimal	Text	Decimal	Text	Text	DateTime	Text	Your data type	Your data type	Text						
+Comment:	Look up your ID in the linked spreadsheet. This term is not Darwin Core.	"Recommended best practice is to use a persistent, globally unique identifier. This term is not Darwin Core."	This information might be used for population structure correction. The population IDs may correspond to the different locations (latitude/longitude) for your samples.	"Names should be compliant to the most recent nomenclatural code. Thus, use the multiplication sign _ to identify a hybrid, not x or X, if possible."	GBIF or WORMS link.	"Such as method of identification, identification confidence, etc."		"Recommended best practice is to separate the values in a list with space vertical bar space ( | ), with terms in order from least specific to most specific."	"Recommended best practice is to use an ISO 3166-1-alpha-2 country code, or ""ZZ"" (for an unknown location or a location unassignable to a single country code), or ""XY"" (for the high seas beyond national jurisdication)."			"Most devices collect WGS84, but please indicate if you use a different system. If unknown, use the value ""unknown"". "				Recommended best practice is to use a date that conforms to ISO 8601-1:2019.	This term is not Darwin Core.	Recommended to include a link or figure citation from a peer reviewed scientific paper to define the trait. This term is not Darwin Core.	Recommended to include a link or figure citation from a peer reviewed scientific paper to define the trait. This term is not Darwin Core.							
+Controlled vocabulary:	https://docs.google.com/spreadsheets/d/1HEUQKbBVo8bhT4gF269A8Yz7Jq3OBOHwxYzcRB1fYWs/edit?gid=0#gid=0				https://www.gbif.org/species/search?q=  https://www.marinespecies.org/aphia.php?p=search  				https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#US			"""WGS84"": A global datum widely used for                  GPS and other navigation systems. ""NAD83"": A datum used in North America. ""NAVD88"": A vertical datum used in North                   America for measuring heights."				https://en.wikipedia.org/wiki/ISO_8601										
+Relevent link(s):				http://rs.tdwg.org/dwc/terms/scientificName	http://rs.tdwg.org/dwc/terms/scientificNameID	http://rs.tdwg.org/dwc/terms/identificationRemarks	http://purl.org/dc/terms/Location	http://rs.tdwg.org/dwc/terms/locality	http://rs.tdwg.org/dwc/terms/countryCode	http://rs.tdwg.org/dwc/terms/decimalLatitude 	http://rs.tdwg.org/dwc/terms/decimalLongitude	http://rs.tdwg.org/dwc/terms/geodeticDatum	http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters	http://rs.tdwg.org/dwc/terms/verbatimDepth	http://rs.tdwg.org/dwc/terms/locationRemarks 	http://rs.tdwg.org/dwc/terms/eventDate 										
+Required?	REQUIRED	REQUIRED	REQUIRED	REQUIRED	REQUIRED		REQUIRED	REQUIRED	REQUIRED	REQUIRED	REQUIRED	REQUIRED				REQUIRED										
+Field name:	RepAdaptID	sampleID	populationID	scientificName	scientificNameID	identificationRemarks	Location	locality	countryCode	decimalLatitude	decimalLongitude	geodeticDatum	coordinateUncertaintyInMeters	verbatimDepth	locationRemarks	eventDate	generalRemarks	YOUR_trait1_units	YOUR_trait2_units	measurementRemarks						
+	rawg0133	SRR20993854	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20993855	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20993856	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993857	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20993858	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993859	pop03	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Hooskanaden Creek"	Oregon	US	42.2217	-124.3813	unknown				2021-05-28										
+	rawg0133	SRR20993860	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993886	pop05	Haliotis rufescens	GBIFtaxonID:2293078		"Charleston\, South Cove"	Oregon	US	43.34013888	-124.37816111	unknown				2021-05-26										
+	rawg0133	SRR20993887	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993888	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993889	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993890	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20993891	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993894	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993895	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993896	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993897	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993898	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993899	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993900	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993901	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993902	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20993903	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993905	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993906	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993907	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993908	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20993909	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993934	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993935	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20993936	pop20	Haliotis rufescens	GBIFtaxonID:2293078		"Rogue Reef\, Gold Beach"	Oregon	US	42.2638	-124.2802	unknown				2021-05-21										
+	rawg0133	SRR20993937	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20993938	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993939	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993940	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993941	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993942	pop12	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Diablo Cove"	California	US	35.21	-120.8573	unknown				2021-05-06										
+	rawg0133	SRR20993943	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993945	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993946	pop03	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Hooskanaden Creek"	Oregon	US	42.2217	-124.3813	unknown				2021-05-28										
+	rawg0133	SRR20993947	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993948	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20993949	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993950	pop12	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Diablo Cove"	California	US	35.21	-120.8573	unknown				2021-05-06										
+	rawg0133	SRR20993951	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993952	pop05	Haliotis rufescens	GBIFtaxonID:2293078		"Charleston\, South Cove"	Oregon	US	43.34013888	-124.37816111	unknown				2021-05-26										
+	rawg0133	SRR20993953	pop03	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Hooskanaden Creek"	Oregon	US	42.2217	-124.3813	unknown				2021-05-28										
+	rawg0133	SRR20993954	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993956	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20993957	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20993958	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20993959	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20993960	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20993961	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993962	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993964	pop12	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Diablo Cove"	California	US	35.21	-120.8573	unknown				2021-05-06										
+	rawg0133	SRR20993965	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20993966	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993967	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20993968	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993969	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993970	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993971	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993972	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993973	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993975	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993976	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20993977	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993978	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20993979	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993980	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993981	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993982	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993984	pop07	Haliotis rufescens	GBIFtaxonID:2293078		Ensenada	Baja California	MX	31.86674	-116.59637	unknown				2019-01-01	Only year provided; 2019/2020 listed									
+	rawg0133	SRR20993985	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993986	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993987	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993988	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993989	pop20	Haliotis rufescens	GBIFtaxonID:2293078		"Rogue Reef\, Gold Beach"	Oregon	US	42.2638	-124.2802	unknown				2021-05-21										
+	rawg0133	SRR20993990	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993991	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20993992	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993993	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993995	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993996	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993997	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993998	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993999	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20994000	pop12	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Diablo Cove"	California	US	35.21	-120.8573	unknown				2021-05-06										
+	rawg0133	SRR20994001	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20994002	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20994003	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20994004	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20994006	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20994007	pop07	Haliotis rufescens	GBIFtaxonID:2293078		Ensenada	Baja California	MX	31.86674	-116.59637	unknown				2019-01-01	Only year provided; 2019/2020 listed									
+	rawg0133	SRR20994008	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20994009	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20994010	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994011	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20994012	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994013	pop20	Haliotis rufescens	GBIFtaxonID:2293078		"Rogue Reef\, Gold Beach"	Oregon	US	42.2638	-124.2802	unknown				2021-05-21										
+	rawg0133	SRR20994014	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20994015	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20994017	pop13	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Patton Cove"	California	US	35.20272	-120.85028	unknown				2021-05-05										
+	rawg0133	SRR20994018	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20994019	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20994020	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20994023	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20994024	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20994025	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20994026	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994027	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20994028	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994029	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994030	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20994032	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20994033	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20994034	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20994035	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20994036	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20994037	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994038	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994039	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20994040	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20994041	pop12	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Diablo Cove"	California	US	35.21	-120.8573	unknown				2021-05-06										
+	rawg0133	SRR20994043	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20994044	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20994045	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20994046	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994047	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994048	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994049	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20994051	pop07	Haliotis rufescens	GBIFtaxonID:2293078		Ensenada	Baja California	MX	31.86674	-116.59637	unknown				2019-01-01	Only year provided; 2019/2020 listed									
+	rawg0133	SRR20994052	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20994053	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20994054	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20994055	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994056	pop05	Haliotis rufescens	GBIFtaxonID:2293078		"Charleston\, South Cove"	Oregon	US	43.34013888	-124.37816111	unknown				2021-05-26										
+	rawg0133	SRR20994057	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20994058	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20994059	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20994060	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20994062	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20994063	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20994064	pop04	Haliotis rufescens	GBIFtaxonID:2293078		"Brookings\, Lone Ranch"	Oregon	US	42.0558	-124.2057	unknown				2021-05-26										
+	rawg0133	SRR20994065	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20994066	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20994067	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20994068	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20994069	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994070	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20994071	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20994072	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20994073	pop13	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Patton Cove"	California	US	35.20272	-120.85028	unknown				2021-05-05										
+	rawg0133	SRR20994074	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20994075	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20994076	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20994077	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20994078	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20994079	pop23	Haliotis rufescens	GBIFtaxonID:2293078		San Pedro	California	US	33.70445	-118.2946	unknown				1999-02-17										
+	rawg0133	SRR20994080	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20994082	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20994083	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20994084	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20994085	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20994086	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20994087	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20994088	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20994089	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20994090	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20994091	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993840	pop23	Haliotis rufescens	GBIFtaxonID:2293078		San Pedro	California	US	33.70445	-118.2946	unknown				1999-02-17										
+	rawg0133	SRR20993841	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993842	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20993843	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993844	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20993845	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20993846	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993847	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20993848	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993849	pop07	Haliotis rufescens	GBIFtaxonID:2293078		Ensenada	Baja California	MX	31.86674	-116.59637	unknown				2019-01-01	Only year provided; 2019/2020 listed									
+	rawg0133	SRR20993850	pop11	Haliotis rufescens	GBIFtaxonID:2293078		Monterey	California	US	36.639425	-121.93438888	unknown				1998-12-17										
+	rawg0133	SRR20993851	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993852	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993853	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993861	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.73890555	-124.50217777	unknown				2009-01-01	Only year provided									
+	rawg0133	SRR20993862	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993863	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993864	pop14	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Pup Rock"	California	US	35.21835	-120.86861	unknown				2021-05-05										
+	rawg0133	SRR20993865	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20993866	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20993867	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20993868	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20993869	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20993870	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993871	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993872	pop23	Haliotis rufescens	GBIFtaxonID:2293078		San Pedro	California	US	33.70445	-118.2946	unknown				1999-02-17										
+	rawg0133	SRR20993873	pop09	Haliotis rufescens	GBIFtaxonID:2293078		Hopkins (Monterey)	California	US	36.62073333	-121.90196666	unknown				2011-02-02										
+	rawg0133	SRR20993874	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20993875	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20993876	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20993877	pop14	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Pup Rock"	California	US	35.21835	-120.86861	unknown				2021-05-05										
+	rawg0133	SRR20993878	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20993879	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20993880	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993881	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20993882	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993883	pop11	Haliotis rufescens	GBIFtaxonID:2293078		Monterey	California	US	36.639425	-121.93438888	unknown				1998-12-17										
+	rawg0133	SRR20993884	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993885	pop27	Haliotis rufescens	GBIFtaxonID:2293078		Trinidad	California	US	41.05053333	-124.15049166	unknown				1999-10-22										
+	rawg0133	SRR20993892	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993893	pop23	Haliotis rufescens	GBIFtaxonID:2293078		San Pedro	California	US	33.70445	-118.2946	unknown				1999-02-17										
+	rawg0133	SRR20993904	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993910	pop20	Haliotis rufescens	GBIFtaxonID:2293078		"Rogue Reef\, Gold Beach"	Oregon	US	42.2638	-124.2802	unknown				2021-05-21										
+	rawg0133	SRR20993911	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993912	pop17	Haliotis rufescens	GBIFtaxonID:2293078		Point Reyes	California	US	37.98801666	-122.96269722	unknown				2003-04-30										
+	rawg0133	SRR20993913	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01	Only year provided									
+	rawg0133	SRR20993914	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20993915	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20993916	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20993917	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993918	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993919	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993920	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993921	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993922	pop14	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Pup Rock"	California	US	35.21835	-120.86861	unknown				2021-05-05										
+	rawg0133	SRR20993923	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20993924	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20993925	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20993926	pop06	Haliotis rufescens	GBIFtaxonID:2293078		Crescent City	California	US	41.74355833	-124.20152777	unknown				1999-08-20										
+	rawg0133	SRR20993927	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20993928	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993929	pop25	Haliotis rufescens	GBIFtaxonID:2293078		Shelter Cover	California	US	40.02043888	-124.06986666	unknown				1998-12-18										
+	rawg0133	SRR20993930	pop14	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Pup Rock"	California	US	35.21835	-120.86861	unknown				2021-05-05										
+	rawg0133	SRR20993931	pop07	Haliotis rufescens	GBIFtaxonID:2293078		Ensenada	Baja California	MX	31.86674	-116.59637	unknown				2019-01-01	Only year provided; 2019/2020 listed									
+	rawg0133	SRR20993932	pop10	Haliotis rufescens	GBIFtaxonID:2293078		House Cove	California	US	39.36008333	-123.82366666	unknown				1999-10-27										
+	rawg0133	SRR20993933	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20993944	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993955	pop19	Haliotis rufescens	GBIFtaxonID:2293078		Punta San Jose	Baja California	MX	31.46263611	-116.59057777	unknown				2016-01-01										
+	rawg0133	SRR20993963	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.73890555	-124.50217777	unknown				2009-01-01										
+	rawg0133	SRR20993974	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20993983	pop08	Haliotis rufescens	GBIFtaxonID:2293078		Farallones Island	California	US	37.70085833	-122.99649166	unknown				2007-07-18										
+	rawg0133	SRR20993994	pop15	Haliotis rufescens	GBIFtaxonID:2293078		Muniz Ranch	California	US	38.45571944	-123.14509722	unknown				2014-06-15										
+	rawg0133	SRR20994005	pop21	Haliotis rufescens	GBIFtaxonID:2293078		Salt Point	California	US	38.563975	-123.33383888	unknown				2011-08-15										
+	rawg0133	SRR20994016	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+	rawg0133	SRR20994021	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994022	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.4414	-124.3025	unknown				2021-06-17										
+	rawg0133	SRR20994031	pop22	Haliotis rufescens	GBIFtaxonID:2293078		San Miguel Isle	California	US	34.05266111	-120.34653611	unknown				2007-08-25										
+	rawg0133	SRR20994042	pop01	Haliotis rufescens	GBIFtaxonID:2293078		Bodega Bay	California	US	38.31356666	-123.07554722	unknown				2010-05-14										
+	rawg0133	SRR20994050	pop24	Haliotis rufescens	GBIFtaxonID:2293078		Santo Tomas	Baja California	MX	31.54910277	-116.68323611	unknown				2014-01-01	Only year provided									
+	rawg0133	SRR20994061	pop14	Haliotis rufescens	GBIFtaxonID:2293078		"Morro Bay\, Pup Rock"	California	US	35.21835	-120.86861	unknown				2021-05-05										
+	rawg0133	SRR20994081	pop16	Haliotis rufescens	GBIFtaxonID:2293078		Point Loma	California	US	32.67363333	-117.24614722	unknown				2021-05-18										
+	rawg0133	SRR20994092	pop18	Haliotis rufescens	GBIFtaxonID:2293078		"Port Orford\, Nellie's Cove"	Oregon	US	42.73890555	-124.50217777	unknown				2009-01-01	Only year provided									
+	rawg0133	SRR20994093	pop11	Haliotis rufescens	GBIFtaxonID:2293078		Monterey	California	US	36.639425	-121.93438888	unknown				1998-12-17										
+	rawg0133	SRR20994094	pop26	Haliotis rufescens	GBIFtaxonID:2293078		Timber Cove	California	US	38.530525	-123.27260555	unknown				2007-08-06										
+	rawg0133	SRR20994095	pop28	Haliotis rufescens	GBIFtaxonID:2293078		VanDamme	California	US	39.26975833	-123.79865833	unknown				2007-02-05										
+	rawg0133	SRR20994096	pop02	Haliotis rufescens	GBIFtaxonID:2293078		Brookings	Oregon	US	42.04461111	-124.28393611	unknown				2008-03-29										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
